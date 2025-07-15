@@ -1,10 +1,10 @@
 # [level 1] 유연근무제 - 388351 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/388351) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/388351?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 83.2 MB, 시간: 4.41 ms
+메모리: 72.5 MB, 시간: 51.76 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 07월 15일 12:37:02
+2025년 07월 15일 12:42:47
 
 ### 문제 설명
 
