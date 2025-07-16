@@ -1,23 +1,23 @@
 class Solution {
     public int solution(int n, int w, int num) {
         int depth = 0;
-
-        int startRow = (num % w == 0) ? (num / w - 1) : (num / w);
-        int originalParity = startRow % 2;
-
+        int numRow = (num % w == 0)
+            ? (num / w - 1)
+            : (num / w);
+        int originDirection = numRow % 2;
         int base = ((num + w - 1) / w) * w;
-        int forwardStep = (base - num) * 2 + 1;
+        int step = (base - num) * 2 + 1;
 
         while (num <= n) {
             depth++;
 
-            if (startRow % 2 == originalParity) {
-                num += forwardStep;
+            if (numRow % 2 == originDirection) {
+                num += step;
             } else {
-                num += (w * 2) - forwardStep;
+                num += (w * 2) - step;
             }
 
-            startRow++;
+            numRow++;
         }
 
         return depth;
