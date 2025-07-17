@@ -1,5 +1,5 @@
 class Solution {
-    int len, now, opStart, opEnd;
+    private int len, now, opStart, opEnd;
     
     private int toSeconds(String time) {
         String[] parts = time.split(":");
@@ -17,18 +17,18 @@ class Solution {
     }
     
     private void skipOp() {
-        if (this.opStart <= this.now && this.now < this.opEnd) {
-            this.now = this.opEnd;
+        if (opStart <= now && now < opEnd) {
+            now = opEnd;
         }
     }
     
     private void runCommand(String command) {
         switch(command) {
             case "prev":
-                this.now = (this.now - 10 < 0) ? 0 : this.now - 10;
+                now = Math.max(0, now - 10);
                 break;
             case "next":
-                this.now = (this.len < this.now + 10) ? this.len : this.now + 10;
+                now = Math.min(len, now + 10);
                 break;
             default: return;
         }
@@ -46,6 +46,6 @@ class Solution {
             skipOp();
         }
         
-        return toTime(this.now);
+        return toTime(now);
     }
 }
