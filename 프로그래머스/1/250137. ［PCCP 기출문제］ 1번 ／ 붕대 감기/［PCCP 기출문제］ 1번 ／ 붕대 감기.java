@@ -11,7 +11,8 @@ class Solution {
         int maxTime = attacks[attacks.length - 1][0];
         
         for (int i = 0; i < attacks.length; i++) {
-            int healDuration = attacks[i][0] - curTime - 1;
+            int attackTime = attacks[i][0];
+            int healDuration = attackTime - curTime - 1;
             if (healDuration > 0) {
                 int healAmount = healPerSec * healDuration;
                 int bonusHealCount = healDuration / castingTime;
@@ -21,7 +22,7 @@ class Solution {
             
             health -= attacks[i][1];
             if (health <= 0) return -1;
-            curTime = attacks[i][0];
+            curTime = attackTime;
         }
         
         return health;
