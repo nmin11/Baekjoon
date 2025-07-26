@@ -1,10 +1,10 @@
 # [level 1] 바탕화면 정리 - 161990 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/161990) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/161990?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 89.7 MB, 시간: 0.29 ms
+메모리: 62.7 MB, 시간: 0.27 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 07월 26일 22:19:37
+2025년 07월 26일 22:24:48
 
 ### 문제 설명
 
