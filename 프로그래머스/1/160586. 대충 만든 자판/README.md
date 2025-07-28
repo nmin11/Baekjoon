@@ -1,10 +1,10 @@
 # [level 1] 대충 만든 자판 - 160586 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/160586?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/160586?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 91 MB, 시간: 4.80 ms
+메모리: 63.5 MB, 시간: 17.02 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 07월 28일 11:47:02
+2025년 07월 28일 12:02:23
 
 ### 문제 설명
 
