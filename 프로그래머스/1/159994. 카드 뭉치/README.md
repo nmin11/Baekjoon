@@ -1,10 +1,10 @@
 # [level 1] 카드 뭉치 - 159994 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/159994) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/159994?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 84.1 MB, 시간: 0.03 ms
+메모리: 63.1 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 07월 29일 12:52:47
+2025년 07월 29일 12:56:14
 
 ### 문제 설명
 
