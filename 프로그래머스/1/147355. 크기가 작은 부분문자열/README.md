@@ -1,10 +1,10 @@
 # [level 1] 크기가 작은 부분문자열 - 147355 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/147355?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/147355?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 94.9 MB, 시간: 7.18 ms
+메모리: 63.3 MB, 시간: 7.81 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 07월 31일 12:43:11
+2025년 07월 31일 12:46:52
 
 ### 문제 설명
 
