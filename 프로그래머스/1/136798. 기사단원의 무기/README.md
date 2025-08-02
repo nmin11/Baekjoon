@@ -1,10 +1,10 @@
 # [level 1] 기사단원의 무기 - 136798 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/136798?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/136798?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 95.3 MB, 시간: 83.24 ms
+메모리: 61.6 MB, 시간: 70.77 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 08월 02일 11:32:10
+2025년 08월 02일 11:36:53
 
 ### 문제 설명
 
