@@ -1,10 +1,10 @@
 # [level 1] 햄버거 만들기 - 133502 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133502) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133502?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 127 MB, 시간: 81.37 ms
+메모리: 115 MB, 시간: 63.89 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 08월 05일 11:54:23
+2025년 08월 05일 12:01:11
 
 ### 문제 설명
 
