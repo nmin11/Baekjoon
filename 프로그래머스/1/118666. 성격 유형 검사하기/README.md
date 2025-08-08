@@ -1,10 +1,10 @@
 # [level 1] 성격 유형 검사하기 - 118666 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/118666) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/118666?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 84.7 MB, 시간: 7.98 ms
+메모리: 64.5 MB, 시간: 1.12 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 08월 08일 18:42:38
+2025년 08월 08일 18:52:01
 
 ### 문제 설명
 
