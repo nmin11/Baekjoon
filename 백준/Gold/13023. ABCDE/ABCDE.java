@@ -53,7 +53,6 @@ public class Main {
             if (isConnected) break;
         }
 
-        if (isConnected) System.out.println(1);
-        else System.out.println(0);
+        System.out.println(isConnected ? 1 : 0);
     }
 }
