@@ -1,94 +1,38 @@
-import java.io.*;
-import java.util.*;
+import java.util.Scanner;
 
 public class Main {
-    static FastReader fr = new FastReader();
-    static StringBuilder sb = new StringBuilder();
-    static int N, answer;
-    static int[] col;
-
-    static void input() {
-        N = fr.nextInt();
-        col = new int[N + 1];
-    }
+    static int[] board;
+    static int n;
+    static int cnt = 0;
     
-    static boolean attackable(int r1, int c1, int r2, int c2) {
-        if (c1 == c2) return true;
-        if (r1 - c1 == r2 - c2) return true;
-        if (r1 + c1 == r2 + c2) return true;
-        return false;
+    private static boolean check(int row) {
+        for (int  i = 0; i < row; i++) {
+            if (board[i] == board[row]) return false;
+            if (Math.abs(row - i) == Math.abs(board[row] - board[i])) return false;
+        }
+        
+        return true;
     }
 
-    static void recursive(int row) {
-        if (row == N + 1) {
-            answer++;
-        } else {
-            for (int c = 1; c <= N; c++) {
-                boolean possible = true;
-                for (int i = 1; i <= row - 1; i++) {
-                    if (attackable(row, c, i, col[i])) {
-                        possible = false;
-                        break;
-                    }
-                }
-                if (possible){
-                    col[row] = c;
-                    recursive(row + 1);
-                    col[row] = 0;
-                }
+    private static void backtracking(int row) {
+        if (row == n) {
+            cnt++;
+            return;
+        }
+        
+        for (int i = 0; i < n; i++) {
+            board[row] = i;
+            if (check(row)) {
+                backtracking(row + 1);
             }
         }
     }
 
     public static void main(String[] args) {
-        input();
-        recursive(1);
-        System.out.println(answer);
-    }
-
-    static class FastReader {
-        BufferedReader br;
-        StringTokenizer st;
-
-        public FastReader() {
-            br = new BufferedReader(new InputStreamReader(System.in));
-        }
-
-        public FastReader(String s) throws FileNotFoundException {
-            br = new BufferedReader(new FileReader(new File(s)));
-        }
-
-        String next() {
-            while (st == null || !st.hasMoreElements()) {
-                try {
-                    st = new StringTokenizer(br.readLine());
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-            return st.nextToken();
-        }
-
-        int nextInt() {
-            return Integer.parseInt(next());
-        }
-
-        long nextLong() {
-            return Long.parseLong(next());
-        }
-
-        double nextDouble() {
-            return Double.parseDouble(next());
-        }
-
-        String nextLine() {
-            String str = "";
-            try {
-                str = br.readLine();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            return str;
-        }
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+        board = new int[n];
+        backtracking(0);
+        System.out.println(cnt);
     }
 }
