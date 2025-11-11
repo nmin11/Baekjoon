@@ -18,15 +18,15 @@ fun main() {
         val (x, y) = queue.poll()
 
         directions.forEach { (dx, dy) ->
-                            val nx = x + dx
-                            val ny = y + dy
+            val nx = x + dx
+            val ny = y + dy
 
-                            if (nx in 0 until n && ny in 0 until m && graph[nx][ny] != 0 && !visited[nx][ny]) {
-                                visited[nx][ny] = true
-                                graph[nx][ny] = graph[x][y] + 1
-                                queue.offer(nx to ny)
-                            }
-                           }
+            if (nx in 0 until n && ny in 0 until m && graph[nx][ny] != 0 && !visited[nx][ny]) {
+                visited[nx][ny] = true
+                graph[nx][ny] = graph[x][y] + 1
+                queue.offer(nx to ny)
+            }
+        }
     }
 
     println(graph[n - 1][m - 1])
