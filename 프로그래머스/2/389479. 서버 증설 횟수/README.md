@@ -1,10 +1,10 @@
 # [level 2] 서버 증설 횟수 - 389479 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/389479) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/389479?language=kotlin) 
 
 ### 성능 요약
 
-메모리: 90.3 MB, 시간: 0.03 ms
+메모리: 63.3 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 03월 01일 00:24:31
+2026년 03월 01일 00:28:08
 
 ### 문제 설명
 
